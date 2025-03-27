@@ -26,7 +26,7 @@ const AboutSection = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <CheckCircle className="text-ocean flex-shrink-0 mr-2 mt-1" size={20} />
+                <CheckCircle className="text-salmon flex-shrink-0 mr-2 mt-1" size={20} />
                 <div>
                   <h4 className="font-medium mb-1">Expert Guides</h4>
                   <p className="text-sm text-gray-600">Local knowledge and insider access</p>
@@ -40,7 +40,7 @@ const AboutSection = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <CheckCircle className="text-ocean flex-shrink-0 mr-2 mt-1" size={20} />
+                <CheckCircle className="text-salmon flex-shrink-0 mr-2 mt-1" size={20} />
                 <div>
                   <h4 className="font-medium mb-1">Sustainable Travel</h4>
                   <p className="text-sm text-gray-600">Responsible practices that respect local communities</p>
@@ -48,7 +48,7 @@ const AboutSection = () => {
               </div>
             </div>
             
-            <button className="neomorphic-btn text-ocean hover:text-ocean-dark">
+            <button className="neomorphic-btn text-ocean hover:text-salmon">
               Learn Our Story
             </button>
           </div>
@@ -61,8 +61,8 @@ const AboutSection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-8 -right-8 w-40 h-40 rounded-2xl neomorphic rotate-6 z-0"></div>
-            <div className="absolute -top-8 -left-8 w-24 h-24 rounded-2xl neomorphic -rotate-12 z-0"></div>
+            <div className="absolute -bottom-8 -right-8 w-40 h-40 rounded-2xl neomorphic rotate-6 z-0 border-2 border-salmon/20"></div>
+            <div className="absolute -top-8 -left-8 w-24 h-24 rounded-2xl neomorphic -rotate-12 z-0 border-2 border-ocean/20"></div>
           </div>
         </div>
       </div>

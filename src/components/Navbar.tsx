@@ -25,17 +25,17 @@ const Navbar = () => {
     }`}>
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-2xl md:text-3xl font-bold text-ocean transition-all duration-300">
-            <span className="font-black tracking-tight">Polynesian</span>
-            <span className="text-ocean-dark">Escapes</span>
+          <a href="#" className="text-2xl md:text-3xl font-bold transition-all duration-300">
+            <span className="font-black tracking-tight text-salmon">Polynesian</span>
+            <span className="text-ocean">Escapes</span>
           </a>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
-            <a href="#destinations" className="font-medium text-gray-700 hover:text-ocean transition-colors duration-300">Destinations</a>
-            <a href="#packages" className="font-medium text-gray-700 hover:text-ocean transition-colors duration-300">Packages</a>
-            <a href="#about" className="font-medium text-gray-700 hover:text-ocean transition-colors duration-300">About</a>
-            <a href="#contact" className="neomorphic-btn font-medium text-ocean hover:text-ocean-dark">
+            <a href="#destinations" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">Destinations</a>
+            <a href="#packages" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">Packages</a>
+            <a href="#about" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">About</a>
+            <a href="#contact" className="neomorphic-btn font-medium text-ocean hover:text-salmon">
               Contact Us
             </a>
           </div>
@@ -57,28 +57,28 @@ const Navbar = () => {
         <div className="container mx-auto px-4 flex flex-col space-y-4">
           <a 
             href="#destinations" 
-            className="font-medium text-gray-700 hover:text-ocean transition-colors duration-300 py-2"
+            className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Destinations
           </a>
           <a 
             href="#packages" 
-            className="font-medium text-gray-700 hover:text-ocean transition-colors duration-300 py-2"
+            className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Packages
           </a>
           <a 
             href="#about" 
-            className="font-medium text-gray-700 hover:text-ocean transition-colors duration-300 py-2"
+            className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             About
           </a>
           <a 
             href="#contact" 
-            className="neomorphic-btn font-medium text-ocean hover:text-ocean-dark text-center py-2"
+            className="neomorphic-btn font-medium text-ocean hover:text-salmon text-center py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Contact Us

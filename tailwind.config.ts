@@ -54,19 +54,19 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				ocean: {
-					light: '#7FB3D5',
-					DEFAULT: '#1A73E8',
-					dark: '#0D47A1'
+					light: '#66DADA',
+					DEFAULT: '#20B2AA',
+					dark: '#008080'
 				},
-				sand: {
-					light: '#F5DEB3',
-					DEFAULT: '#D2B48C',
-					dark: '#C19A6B'
+				salmon: {
+					light: '#FFB6C1',
+					DEFAULT: '#FA8072',
+					dark: '#E9967A'
 				},
 				tropical: {
 					light: '#A8E6CF',
-					DEFAULT: '#1E8449',
-					dark: '#145A32'
+					DEFAULT: '#20B2AA',
+					dark: '#008080'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

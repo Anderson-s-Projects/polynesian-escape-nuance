@@ -47,8 +47,8 @@ const DestinationCard: React.FC<DestinationCardProps> = ({
       <div className="px-2">
         <p className="text-gray-600 mb-4 line-clamp-3">{description}</p>
         <div className="flex justify-between items-center">
-          <span className="text-ocean-dark font-bold text-lg">{price}</span>
-          <button className="neomorphic-btn text-ocean hover:text-ocean-dark text-sm px-4 py-2">
+          <span className="text-salmon font-bold text-lg">{price}</span>
+          <button className="neomorphic-btn text-ocean hover:text-salmon text-sm px-4 py-2">
             View Details
           </button>
         </div>

@@ -40,7 +40,7 @@ const Hero = () => {
             </a>
             <a 
               href="#contact" 
-              className="neomorphic-btn bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-8 py-4 rounded-xl font-medium text-lg transform transition-all hover:scale-105"
+              className="neomorphic-btn bg-salmon hover:bg-salmon-dark text-white px-8 py-4 rounded-xl font-medium text-lg transform transition-all hover:scale-105"
             >
               Contact Us
             </a>
