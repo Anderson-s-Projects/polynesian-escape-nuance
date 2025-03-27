@@ -1,69 +1,86 @@
-# Welcome to your Lovable project
 
-## Project info
+# Polynesian Journeys Travel Agency
 
-**URL**: https://lovable.dev/projects/5364db01-2818-4845-a0f3-5ab197fe3079
+A beautiful, neumorphic design travel agency website showcasing worldwide vacation packages with Polynesian-inspired visual elements.
 
-## How can I edit this code?
+## Project Info
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/5364db01-2818-4845-a0f3-5ab197fe3079) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
+This project is a static website for a travel agency, built with:
 
 - Vite
 - TypeScript
 - React
-- shadcn-ui
+- shadcn/ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Live Demo
 
-Simply open [Lovable](https://lovable.dev/projects/5364db01-2818-4845-a0f3-5ab197fe3079) and click on Share -> Publish.
+Visit the live site: [https://[your-username].github.io/[your-repo-name]/](https://[your-username].github.io/[your-repo-name]/)
 
-## I want to use a custom domain - is that possible?
+## Features
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- Neumorphic design style with soft shadows and subtle textures
+- Polynesian-inspired visual elements
+- Responsive layout for all device sizes
+- Showcases travel destinations and vacation packages
+- Contact form for inquiries (static)
+
+## Deployment
+
+This website is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### How It Works
+
+1. When you push changes to the `main` branch, the GitHub Actions workflow will automatically:
+   - Build the project
+   - Deploy it to GitHub Pages
+
+2. To manually trigger deployment:
+   - Go to your repository's "Actions" tab
+   - Select the "Deploy to GitHub Pages" workflow
+   - Click "Run workflow"
+
+### First-time Setup
+
+To configure GitHub Pages for your repository:
+
+1. Go to your repository settings
+2. Navigate to "Pages" in the sidebar
+3. Under "Source", select "GitHub Actions"
+
+## Local Development
+
+```sh
+# Clone the repository
+git clone https://github.com/[your-username]/[your-repo-name].git
+
+# Navigate to the project directory
+cd [your-repo-name]
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## Building for Production
+
+```sh
+# Build the project
+npm run build
+
+# Preview the production build locally
+npm run preview
+```
+
+## Project Structure
+
+- `src/` - Source code
+  - `components/` - Reusable UI components
+  - `pages/` - Page components
+  - `lib/` - Utility functions
+
+## License
+
+[Choose an appropriate license for your project]
