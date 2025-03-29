@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface DestinationCardProps {
   title: string;
@@ -9,6 +10,7 @@ interface DestinationCardProps {
   description: string;
   price: string;
   index: number;
+  id: string;
 }
 
 const DestinationCard: React.FC<DestinationCardProps> = ({
@@ -17,7 +19,8 @@ const DestinationCard: React.FC<DestinationCardProps> = ({
   image,
   description,
   price,
-  index
+  index,
+  id
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   
@@ -48,9 +51,12 @@ const DestinationCard: React.FC<DestinationCardProps> = ({
         <p className="text-gray-600 mb-4 line-clamp-3">{description}</p>
         <div className="flex justify-between items-center">
           <span className="text-salmon font-bold text-lg">{price}</span>
-          <button className="neomorphic-btn text-ocean hover:text-salmon text-sm px-4 py-2">
+          <Link 
+            to={`/destination/${id}`} 
+            className="neomorphic-btn text-ocean hover:text-salmon text-sm px-4 py-2"
+          >
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>

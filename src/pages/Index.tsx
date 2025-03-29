@@ -17,6 +17,7 @@ const Index = () => {
 
   const destinations = [
     {
+      id: "bora-bora",
       title: "Bora Bora Paradise",
       location: "French Polynesia",
       image: "https://images.unsplash.com/photo-1589152607430-a69b32b1f65f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -24,6 +25,7 @@ const Index = () => {
       price: "From $3,499",
     },
     {
+      id: "santorini",
       title: "Santorini Getaway",
       location: "Greece",
       image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
@@ -31,6 +33,7 @@ const Index = () => {
       price: "From $2,799",
     },
     {
+      id: "kyoto",
       title: "Kyoto Cultural Immersion",
       location: "Japan",
       image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -38,6 +41,7 @@ const Index = () => {
       price: "From $2,999",
     },
     {
+      id: "maui",
       title: "Maui Adventure",
       location: "Hawaii, USA",
       image: "https://images.unsplash.com/photo-1542259009477-d625272157b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
@@ -45,6 +49,7 @@ const Index = () => {
       price: "From $2,599",
     },
     {
+      id: "maldives",
       title: "Maldives Retreat",
       location: "Maldives",
       image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80",
@@ -52,6 +57,7 @@ const Index = () => {
       price: "From $4,199",
     },
     {
+      id: "bali",
       title: "Bali Spiritual Journey",
       location: "Indonesia",
       image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1438&q=80",
@@ -81,6 +87,7 @@ const Index = () => {
               <DestinationCard
                 key={index}
                 index={index}
+                id={destination.id}
                 title={destination.title}
                 location={destination.location}
                 image={destination.image}

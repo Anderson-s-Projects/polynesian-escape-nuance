@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,19 +26,20 @@ const Navbar = () => {
     }`}>
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-2xl md:text-3xl font-bold transition-all duration-300">
+          <Link to="/" className="text-2xl md:text-3xl font-bold transition-all duration-300">
             <span className="font-black tracking-tight text-salmon">Polynesian</span>
             <span className="text-ocean">Escapes</span>
-          </a>
+          </Link>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
-            <a href="#destinations" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">Destinations</a>
-            <a href="#packages" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">Packages</a>
-            <a href="#about" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">About</a>
-            <a href="#contact" className="neomorphic-btn font-medium text-ocean hover:text-salmon">
+            <Link to="/#destinations" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">Destinations</Link>
+            <Link to="/#packages" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">Packages</Link>
+            <Link to="/#about" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">About</Link>
+            <Link to="/faq" className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300">FAQ</Link>
+            <Link to="/#contact" className="neomorphic-btn font-medium text-ocean hover:text-salmon">
               Contact Us
-            </a>
+            </Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -55,34 +57,41 @@ const Navbar = () => {
         mobileMenuOpen ? 'max-h-64 opacity-100 py-4' : 'max-h-0 opacity-0'
       }`}>
         <div className="container mx-auto px-4 flex flex-col space-y-4">
-          <a 
-            href="#destinations" 
+          <Link 
+            to="/#destinations" 
             className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Destinations
-          </a>
-          <a 
-            href="#packages" 
+          </Link>
+          <Link 
+            to="/#packages" 
             className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Packages
-          </a>
-          <a 
-            href="#about" 
+          </Link>
+          <Link 
+            to="/#about" 
             className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             About
-          </a>
-          <a 
-            href="#contact" 
+          </Link>
+          <Link 
+            to="/faq" 
+            className="font-medium text-gray-700 hover:text-salmon transition-colors duration-300 py-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            FAQ
+          </Link>
+          <Link 
+            to="/#contact" 
             className="neomorphic-btn font-medium text-ocean hover:text-salmon text-center py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
