@@ -30,7 +30,7 @@ const PackageDetail = () => {
       title: 'Adventure Seekers',
       description: 'Embark on thrilling journeys. Hiking, diving, and exploring untamed landscapes for those with an adventurous spirit.',
       image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      details: 'Our Adventure Seekers package is designed for travelers who crave excitement and adrenaline. From scaling mountain peaks to diving deep into ocean waters, these journeys push boundaries and create unforgettable memories. Guided by experienced experts who prioritize both thrills and safety, you'll discover the world\'s most stunning natural environments through activities that challenge and exhilarate.',
+      details: 'Our Adventure Seekers package is designed for travelers who crave excitement and adrenaline. From scaling mountain peaks to diving deep into ocean waters, these journeys push boundaries and create unforgettable memories. Guided by experienced experts who prioritize both thrills and safety, you\'ll discover the world\'s most stunning natural environments through activities that challenge and exhilarate.',
       features: [
         'Professional expedition leaders with safety certification',
         'Top-quality equipment provided for all activities',
