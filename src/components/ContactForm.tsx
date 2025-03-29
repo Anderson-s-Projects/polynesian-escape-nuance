@@ -1,8 +1,6 @@
-
 import React, { useState } from 'react';
 import { Send, Phone, Mail, MapPin } from 'lucide-react';
 import { toast } from "sonner";
-
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -11,12 +9,16 @@ const ContactForm = () => {
     destination: '',
     message: ''
   });
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    const {
+      name,
+      value
+    } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real app, you would send the form data to a server here
@@ -31,9 +33,7 @@ const ContactForm = () => {
       message: ''
     });
   };
-
-  return (
-    <section id="contact" className="section-padding polynesian-pattern">
+  return <section id="contact" className="section-padding polynesian-pattern">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 bg-ocean/10 text-ocean rounded-full text-sm font-medium mb-4">Get In Touch</span>
@@ -67,7 +67,7 @@ const ContactForm = () => {
                   <div>
                     <h4 className="font-medium text-gray-800 mb-1">Email</h4>
                     <p className="text-gray-600">info@polynesianescapes.com</p>
-                    <p className="text-gray-600">support@polynesianescapes.com</p>
+                    
                   </div>
                 </div>
                 
@@ -119,57 +119,28 @@ const ContactForm = () => {
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                       Your Name
                     </label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      name="name" 
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="neomorphic-input w-full" 
-                      required 
-                    />
+                    <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="neomorphic-input w-full" required />
                   </div>
                   
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address
                     </label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      name="email" 
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="neomorphic-input w-full" 
-                      required 
-                    />
+                    <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="neomorphic-input w-full" required />
                   </div>
                   
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number
                     </label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
-                      name="phone" 
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="neomorphic-input w-full" 
-                    />
+                    <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="neomorphic-input w-full" />
                   </div>
                   
                   <div>
                     <label htmlFor="destination" className="block text-sm font-medium text-gray-700 mb-2">
                       Interested Destination
                     </label>
-                    <select 
-                      id="destination" 
-                      name="destination" 
-                      value={formData.destination}
-                      onChange={handleChange}
-                      className="neomorphic-input w-full" 
-                    >
+                    <select id="destination" name="destination" value={formData.destination} onChange={handleChange} className="neomorphic-input w-full">
                       <option value="">Select a destination</option>
                       <option value="Bora Bora">Bora Bora</option>
                       <option value="Maldives">Maldives</option>
@@ -186,22 +157,11 @@ const ContactForm = () => {
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Your Message
                   </label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    rows={4} 
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="neomorphic-input w-full" 
-                    required
-                  ></textarea>
+                  <textarea id="message" name="message" rows={4} value={formData.message} onChange={handleChange} className="neomorphic-input w-full" required></textarea>
                 </div>
                 
                 <div>
-                  <button 
-                    type="submit" 
-                    className="neomorphic-btn bg-ocean text-white hover:bg-ocean-dark flex items-center justify-center w-full sm:w-auto px-8 py-3 sm:ml-auto"
-                  >
+                  <button type="submit" className="neomorphic-btn bg-ocean text-white hover:bg-ocean-dark flex items-center justify-center w-full sm:w-auto px-8 py-3 sm:ml-auto">
                     <Send className="mr-2 h-5 w-5" />
                     Send Message
                   </button>
@@ -211,8 +171,6 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactForm;
