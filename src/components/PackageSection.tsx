@@ -1,22 +1,26 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Compass, Waves, BookOpen } from 'lucide-react';
 
 const PackageSection = () => {
   const packages = [
     {
+      id: "adventure",
       title: "Adventure Seekers",
       icon: <Compass className="w-12 h-12 text-ocean mb-4" />,
       description: "Embark on thrilling journeys. Hiking, diving, and exploring untamed landscapes for those with an adventurous spirit.",
       features: ["Guided Expeditions", "Extreme Sports", "Wildlife Encounters", "Mountain Hikes"]
     },
     {
+      id: "relaxation",
       title: "Relaxation Retreats",
       icon: <Waves className="w-12 h-12 text-salmon mb-4" />,
       description: "Unwind in serene destinations. Spa treatments, pristine beaches, and peaceful environments for total rejuvenation.",
       features: ["Luxury Spas", "Private Beaches", "Yoga Sessions", "Meditation Retreats"]
     },
     {
+      id: "cultural",
       title: "Cultural Immersion",
       icon: <BookOpen className="w-12 h-12 text-ocean mb-4" />,
       description: "Dive into rich cultural experiences. Historical tours, authentic cuisine, and local traditions for curious travelers.",
@@ -54,9 +58,9 @@ const PackageSection = () => {
                   </li>
                 ))}
               </ul>
-              <button className={`neomorphic-btn mt-auto ${index % 2 === 0 ? 'text-ocean hover:text-salmon' : 'text-salmon hover:text-ocean'}`}>
+              <Link to={`/package/${pkg.id}`} className={`neomorphic-btn mt-auto ${index % 2 === 0 ? 'text-ocean hover:text-salmon' : 'text-salmon hover:text-ocean'}`}>
                 Learn More
-              </button>
+              </Link>
             </div>
           ))}
         </div>

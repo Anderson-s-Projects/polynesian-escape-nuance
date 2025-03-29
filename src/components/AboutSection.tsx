@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 
 const AboutSection = () => {
@@ -48,9 +49,9 @@ const AboutSection = () => {
               </div>
             </div>
             
-            <button className="neomorphic-btn text-ocean hover:text-salmon">
+            <Link to="/our-story" className="neomorphic-btn text-ocean hover:text-salmon">
               Learn Our Story
-            </button>
+            </Link>
           </div>
           
           <div className="order-1 lg:order-2 relative">

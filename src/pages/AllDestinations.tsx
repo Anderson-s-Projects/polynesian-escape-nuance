@@ -1,21 +1,10 @@
 
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
 import DestinationCard from '../components/DestinationCard';
-import PackageSection from '../components/PackageSection';
-import AboutSection from '../components/AboutSection';
-import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 
-const Index = () => {
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
-
+const AllDestinations = () => {
   const destinations = [
     {
       id: "bora-bora",
@@ -65,21 +54,43 @@ const Index = () => {
       description: "Rejuvenate your soul in the Island of Gods with yoga retreats, ancient temples, and lush rice terraces.",
       price: "From $1,999",
     },
+    {
+      id: "amalfi",
+      title: "Amalfi Coast Tour",
+      location: "Italy",
+      image: "https://images.unsplash.com/photo-1533606688190-a44bc9bb3cb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      description: "Drive along the stunning coastline, visiting charming villages, savoring authentic Italian cuisine, and enjoying the Mediterranean lifestyle.",
+      price: "From $3,299",
+    },
+    {
+      id: "tahiti",
+      title: "Tahiti Island Hopping",
+      location: "French Polynesia",
+      image: "https://images.unsplash.com/photo-1582750580712-ba33e87b4742?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+      description: "Experience multiple islands with unique characters, from the vibrant markets of Papeete to the vanilla plantations of Taha'a.",
+      price: "From $4,099",
+    },
+    {
+      id: "fiji",
+      title: "Fiji Island Paradise",
+      location: "Fiji",
+      image: "https://images.unsplash.com/photo-1587407627257-27b7127c868c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+      description: "Discover the pristine beaches, vibrant coral reefs, and authentic village experiences that make Fiji a true South Pacific gem.",
+      price: "From $3,199",
+    }
   ];
 
   return (
     <div className="min-h-screen">
       <Navbar />
-      <Hero />
       
-      {/* Destinations Section */}
-      <section id="destinations" className="section-padding bg-white">
+      <section className="pt-32 pb-16 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <span className="inline-block px-3 py-1 bg-ocean/10 text-ocean rounded-full text-sm font-medium mb-4">Popular Destinations</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Discover Your Perfect Getaway</h2>
+            <span className="inline-block px-3 py-1 bg-ocean/10 text-ocean rounded-full text-sm font-medium mb-4">Explore the World</span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">All Destinations</h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              From the azure waters of Polynesia to ancient cities rich with history, our curated destinations offer unforgettable experiences for every traveler.
+              Browse our complete collection of handpicked destinations, each offering unique experiences and unforgettable memories.
             </p>
           </div>
           
@@ -97,21 +108,12 @@ const Index = () => {
               />
             ))}
           </div>
-          
-          <div className="text-center mt-12">
-            <Link to="/destinations" className="neomorphic-btn text-ocean hover:text-ocean-dark">
-              View All Destinations
-            </Link>
-          </div>
         </div>
       </section>
       
-      <PackageSection />
-      <AboutSection />
-      <ContactForm />
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default AllDestinations;
